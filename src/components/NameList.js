@@ -32,6 +32,7 @@ function NameList() {
         }
     ];
     // key is a special string attribute you need to include when creating lists of elements.
+    // Keys give the elements a stable identity.
     // keys help React identify which items have changed, are added, or are removed.
     // Keys should be given to the elements inside the array to give the elements a stable identity.
     // Keys only make sense in the context of the surrounding array.
