@@ -1,23 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
+import Hello from './components/Hello';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+import MessageStatemanageEventHandling from './components/MessageStatemanage/MessageStatemanageEventHandling';
+import MessagePostState from './components/MessageStatemanage/MessagePostState';
+
+import Counter from './components/counter/Counter';
+import ConditinalRendering from './components/ConditinalRendering';
+import ListRendering from './components/ListRendering';
+import { List } from '@mui/material';
+import NameList from './components/NameList';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {/* <Hello/> */}
+      
+      {/* <Greet name="Functional" lastName="component"/>   */}
+      
+      {/* <Welcome name="Class" lastName="component"> 
+        This is children props
+        but it is not a good practice to use children props
+      </Welcome>  */}
+
+      {/* <MessagePostState/> */}
+
+      {/* <MessageStatemanageEventHandling name="Event " lastName="handling"/> */}
+      
+      <br/>
+      <Counter/>
+      <br/>
+      
+      <br/>
+      <ConditinalRendering/>   
+      
+      <br/>
+      <ListRendering/>   
+      
+      <NameList/>
+
     </div>
   );
 }
