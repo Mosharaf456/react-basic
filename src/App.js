@@ -13,6 +13,9 @@ import ListRendering from './components/ListRendering';
 import { List } from '@mui/material';
 import NameList from './components/NameList';
 
+import StyleSheet from './components/Stylesheet';
+import Inline from './components/Inline';
+
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
       {/* <ListRendering/>    */}
       
       <NameList/>
+
+      <StyleSheet primary={true}/>
+      <Inline/>
 
     </div>
   );
