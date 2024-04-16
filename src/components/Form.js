@@ -11,7 +11,7 @@ class Form extends Component {
       }
     }
     /*
-     When you assign a handler to the onChange event the event itself is passed as an parameter to the handler. 
+     When you assign a handler to the onChange event the******* event itself is passed as an parameter to the handler. 
      so we have one parameter called event. 
      you can access the value of the input field using event.target.value.
      so any time you change the input value that value is captured using event.target.value and set to the state.
@@ -38,9 +38,13 @@ class Form extends Component {
             topic: event.target.value
         })
     }
+    handleSubmit = (event) => {
+        alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+        event.preventDefault();
+    }
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Username </label>
                     <input type='text' value={this.state.username} onChange={this.handleUsernameChange}/>
@@ -58,6 +62,7 @@ class Form extends Component {
                     </select>                           
                 </div>
                 <button type='submit'>Submit</button>
+                {/* type is submit will give user the ability to submit forms by hitting the enter key which is always good*/}
             </form>
         )
     }
