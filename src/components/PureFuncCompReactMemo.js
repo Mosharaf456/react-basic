@@ -1,9 +1,10 @@
 import React from 'react'
 
-function PureFuncCompReactMemo() {
+function PureFuncCompReactMemo({name}) {
+    console.log('Rendering react memo PureFuncCompReactMemo')
   return (
-    <div>PureFuncCompReactMemo</div>
+    <div>PureFuncCompReactMemo {name}</div>
   )
 }
 
-export default PureFuncCompReactMemo
+export default React.memo(PureFuncCompReactMemo)

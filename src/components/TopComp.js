@@ -1,19 +1,20 @@
 import React, { Component, PureComponent } from 'react'
 import RegComp from './RegComp'
 import PureComp from './PureComp'
+import PureFuncCompReactMemo from './PureFuncCompReactMemo'
 
 class TopComp extends Component {
     constructor(props) {
     super(props)
 
     this.state = {
-        firstName: 'John',
+        name: 'John',
     }
     }
     componentDidMount() {
         setInterval(() => {
             this.setState({
-                firstName: 'John'
+                name: 'John'
             })
         }, 2000)        
     }
@@ -21,6 +22,7 @@ class TopComp extends Component {
         return (
         <div>
             <h1>Top Component</h1>
+            <PureFuncCompReactMemo name={this.state.name}/>
             <RegComp name={this.state.name}/>
             <PureComp name={this.state.name}/>
         </div>
