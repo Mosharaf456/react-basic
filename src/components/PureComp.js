@@ -8,6 +8,7 @@ class PureComp extends PureComponent {
   // to re-render the component
   // It is good idea to use Pure component when you know your component doesn't need to re-render and also all the children components are pure components
   // to avoid unexpected behavior
+  // Never mutate the state or props . ALways return new object or array when updating the state or props
   render() {
     return (
       <div>PureComponent {this.props.name}</div>
