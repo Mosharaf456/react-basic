@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Fragment } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 
 import Hello from './components/Hello';
 import Greet from './components/Greet';
@@ -24,6 +24,7 @@ import Form from './components/Form';
 import Parent from './components/Parent';
 import FragmentDemo from './components/FragmentDemo';
 
+import TopComp from './components/TopComp';
 
 function App() {
   return (
@@ -64,7 +65,9 @@ function App() {
 
       {/* <Form/> */}
 
-      <FragmentDemo/>
+      {/* <FragmentDemo/> */}
+
+      <TopComp/>
 
     </div>
   );
