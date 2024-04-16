@@ -39,7 +39,7 @@ function App() {
       {/* <MessageStatemanageEventHandling name="Event " lastName="handling"/> */}
       
       <br/>
-      {/* <Counter/> */}
+      <Counter/>
       <br/>
       
       <br/>
