@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Hello from './components/Hello';
 import Greet from './components/Greet';
@@ -22,12 +22,13 @@ import Inline from './components/Inline';
 import ModuleBasedStyles from './components/ModuleBasedStyles';
 import Form from './components/Form';
 import Parent from './components/Parent';
+import FragmentDemo from './components/FragmentDemo';
 
 
 function App() {
   return (
-    <div >
-      <Parent/>
+    <div style={{'text-align': 'center'}}>
+      {/* <Parent/> */}
       {/* <Hello/> */}
       
       {/* <Greet name="Functional" lastName="component"/>   */}
@@ -41,10 +42,10 @@ function App() {
 
       {/* <MessageStatemanageEventHandling name="Event " lastName="handling"/> */}
       
-      <EventBinding/>
+      {/* <EventBinding/> */}
       <br/>
 
-      <Counter/>
+      {/* <Counter/> */}
       <br/>
       
       <br/>
@@ -61,7 +62,9 @@ function App() {
       {/* <h1 className='error'>Error app conflict css</h1> */}
       {/* <ModuleBasedStyles/> */}
 
-      <Form/>
+      {/* <Form/> */}
+
+      <FragmentDemo/>
 
     </div>
   );
