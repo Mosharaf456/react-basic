@@ -17,6 +17,10 @@ import StyleSheet from './components/Stylesheet';
 import Inline from './components/Inline';
 
 
+
+import ModuleBasedStyles from './components/ModuleBasedStyles';
+
+
 function App() {
   return (
     <div >
@@ -48,6 +52,8 @@ function App() {
 
       <StyleSheet primary={true}/>
       <Inline/>
+      <h1 className='error'>Error app conflict css</h1>
+      <ModuleBasedStyles/>
 
     </div>
   );
