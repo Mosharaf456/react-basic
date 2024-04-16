@@ -6,7 +6,7 @@ function Stylesheet(props) {
     *********************** Styling and CSS Basics**************************
         1. CSS stylesheets
         2. Inline styling
-        3. CSS Modules
+        3. CSS Modules : it is available with react scripts v2.0 and above 
         4. CSS in JS Libaries (Styled Components)
     */
     let className = props.primary ? 'primary' : '';
