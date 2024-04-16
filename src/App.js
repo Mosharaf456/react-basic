@@ -21,11 +21,13 @@ import Inline from './components/Inline';
 
 import ModuleBasedStyles from './components/ModuleBasedStyles';
 import Form from './components/Form';
+import Parent from './components/Parent';
 
 
 function App() {
   return (
     <div >
+      <Parent/>
       {/* <Hello/> */}
       
       {/* <Greet name="Functional" lastName="component"/>   */}
