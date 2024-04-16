@@ -42,15 +42,15 @@ class Form extends Component {
         return (
             <form>
                 <div>
-                    <label>Username</label>
+                    <label>Username </label>
                     <input type='text' value={this.state.username} onChange={this.handleUsernameChange}/>
                 </div>
                 <div>
-                    <label>Comments</label>
+                    <label>Comments </label>
                     <textarea value={this.state.comments} onChange={this.handleCommentChange}></textarea>
                 </div>
                 <div>
-                    <label>Topic</label>
+                    <label>Topic </label>
                     <select value={this.state.topic} onChange={this.handleTopicChange}>
                         <option value='react'>React</option>
                         <option value='angular'>Angular</option>
