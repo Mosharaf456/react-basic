@@ -7,6 +7,7 @@ import Welcome from './components/Welcome';
 import MessageStatemanageEventHandling from './components/MessageStatemanage/MessageStatemanageEventHandling';
 import MessagePostState from './components/MessageStatemanage/MessagePostState';
 
+import EventBinding from './components/counter/EventBinding';
 import Counter from './components/counter/Counter';
 import ConditinalRendering from './components/ConditinalRendering';
 import ListRendering from './components/ListRendering';
@@ -38,7 +39,9 @@ function App() {
 
       {/* <MessageStatemanageEventHandling name="Event " lastName="handling"/> */}
       
+      <EventBinding/>
       <br/>
+
       <Counter/>
       <br/>
       
