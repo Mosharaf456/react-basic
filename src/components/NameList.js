@@ -43,6 +43,23 @@ function NameList() {
     const personList = persons.map(person => <Person key={person.id} person={person} />)
     // return <div>{personList}</div>
 
+    // infact, we can use index as key but it is not a good practice
+    // infact react uses index as key when key is not provided
+    // safely use index as key when:
+    // 1. the items in your list do not have a unique id.
+    // 2. the list is a static list and will not change.
+    // 3. the list will never be reordered or filtered.
+    // 4. the list will not have items removed or added.
+    // 5. the list will remain static.
+    // 6. the list will not be manipulated in any way.
+    
+    //Note:
+    // use npm packages to genrate a unique ID for a list of items:
+    // always use unique key when the list is dynamic and will change.
+    // if unique key is not available then  hasing out a unique value from one of the existing properties.
+    // bottom line is try avoid to use index as key
+
+
     const names = ['Bruce', 'Clark', 'Diana','Bruce'];
     const nameList = names.map((name, index) => <h2 key={index}>{index} {name}</h2>)
     return <div> NameList {nameList}</div>
