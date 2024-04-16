@@ -19,6 +19,7 @@ import Inline from './components/Inline';
 
 
 import ModuleBasedStyles from './components/ModuleBasedStyles';
+import Form from './components/Form';
 
 
 function App() {
@@ -38,22 +39,24 @@ function App() {
       {/* <MessageStatemanageEventHandling name="Event " lastName="handling"/> */}
       
       <br/>
-      <Counter/>
+      {/* <Counter/> */}
       <br/>
       
       <br/>
-      <ConditinalRendering/>   
+      {/* <ConditinalRendering/>    */}
       
       <br/>
       {/* ListRendering.js:8 Warning: Each child in a list should have a unique "key" prop. */}
       {/* <ListRendering/>    */}
       
-      <NameList/>
+      {/* <NameList/> */}
 
-      <StyleSheet primary={true}/>
-      <Inline/>
-      <h1 className='error'>Error app conflict css</h1>
-      <ModuleBasedStyles/>
+      {/* <StyleSheet primary={true}/> */}
+      {/* <Inline/> */}
+      {/* <h1 className='error'>Error app conflict css</h1> */}
+      {/* <ModuleBasedStyles/> */}
+
+      <Form/>
 
     </div>
   );
