@@ -7,7 +7,7 @@ const ListRendering = () => {
     
     return (
         <div>
-            {nameList}
+            ListRendering : {nameList}
         </div>
     )
 }

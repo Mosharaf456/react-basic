@@ -41,7 +41,11 @@ function NameList() {
     // Keys serve as a hint to React but they don’t get passed to your components.
     // If you need the same value in your component, pass it explicitly as a prop with a different name.
     const personList = persons.map(person => <Person key={person.id} person={person} />)
-    return <div>{personList}</div>
+    // return <div>{personList}</div>
+
+    const names = ['Bruce', 'Clark', 'Diana','Bruce'];
+    const nameList = names.map((name, index) => <h2 key={index}>{index} {name}</h2>)
+    return <div> NameList {nameList}</div>
 }
 
 export default NameList;

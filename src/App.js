@@ -38,7 +38,8 @@ function App() {
       <ConditinalRendering/>   
       
       <br/>
-      <ListRendering/>   
+      {/* ListRendering.js:8 Warning: Each child in a list should have a unique "key" prop. */}
+      {/* <ListRendering/>    */}
       
       <NameList/>
 
