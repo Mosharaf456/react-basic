@@ -39,10 +39,11 @@ import CounterRender from './components/CounterRender';
 import ComponentC from './components/contextConcept/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/httpReq/PostList';
+import PostForm from './components/httpReq/PostForm';
 
 function App() {
   return (
-    <div style={{'text-align': 'center'}}>
+    <div style={{'textAlign': 'center'}}>
       {/* <Parent/> */}
       {/* <Hello/> */}
       
@@ -125,7 +126,8 @@ function App() {
       </UserProvider> */}
 
       {/* HTTP request */}
-      <PostList/>
+      {/* <PostList/> */}
+      <PostForm/>
 
     </div>
   );
