@@ -89,8 +89,8 @@ function App() {
       {/* <ErrorBoundaryComp>
         <Hero heroName="Joker"/>
       </ErrorBoundaryComp> */}
-      
-      <ClickCounter/>
+
+      <ClickCounter name='Mosharaf'/>
       <HoverCountr/>
 
     </div>
