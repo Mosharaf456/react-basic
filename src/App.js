@@ -99,8 +99,16 @@ function App() {
 
       
       {/* another approach render props pattern to reduce duplicate */}
-      <CounterRender render={(count, incrementCount) => <ClickCounter2 count={count} incrementCount={incrementCount}/>}/>
-      <CounterRender render={(count, incrementCount) => <HoverCountr2 count={count} incrementCount={incrementCount}/>}/>
+      <CounterRender> 
+        {(count, incrementCount) => (
+          <ClickCounter2 count={count} incrementCount={incrementCount}/>
+        )}
+      </CounterRender>
+      <CounterRender>
+        {(count, incrementCount) => (
+          <HoverCountr2 count={count} incrementCount={incrementCount}/>
+        )}
+      </CounterRender>
 
       <User render={(isLoggedIn) => isLoggedIn ? 'Mosharaf' : 'Guest'}/>
 
