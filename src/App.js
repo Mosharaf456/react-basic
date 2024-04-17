@@ -25,6 +25,7 @@ import Parent from './components/Parent';
 import FragmentDemo from './components/FragmentDemo';
 
 import TopComp from './components/TopComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
@@ -68,6 +69,8 @@ function App() {
       {/* <FragmentDemo/> */}
 
       <TopComp/>
+
+      <RefsDemo/>
 
     </div>
   );
