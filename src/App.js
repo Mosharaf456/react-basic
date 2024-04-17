@@ -38,6 +38,7 @@ import CounterRender from './components/CounterRender';
 
 import ComponentC from './components/contextConcept/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/httpReq/PostList';
 
 function App() {
   return (
@@ -119,10 +120,12 @@ function App() {
       {/* Context provides a way to pass data through the component tree without having to pass props down manually at every level.  */}
       {/* Implements a user context which is enable a component at any level of the component tree to access the props   */}
       
-      <UserProvider value="MH" >
+      {/* <UserProvider value="MH" >
         <ComponentC/>
-      </UserProvider>
+      </UserProvider> */}
 
+      <PostList/>
+      
     </div>
   );
 }
