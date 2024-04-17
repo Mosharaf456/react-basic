@@ -36,6 +36,9 @@ import HoverCountr2 from './components/HoverCountr2';
 import User from './components/User';
 import CounterRender from './components/CounterRender';
 
+import ComponentC from './components/contextConcept/ComponentC';
+import { UserProvider } from './components/userContext';
+
 function App() {
   return (
     <div style={{'text-align': 'center'}}>
@@ -99,7 +102,7 @@ function App() {
 
       
       {/* another approach render props pattern to reduce duplicate */}
-      <CounterRender> 
+      {/* <CounterRender> 
         {(count, incrementCount) => (
           <ClickCounter2 count={count} incrementCount={incrementCount}/>
         )}
@@ -110,7 +113,15 @@ function App() {
         )}
       </CounterRender>
 
-      <User render={(isLoggedIn) => isLoggedIn ? 'Mosharaf' : 'Guest'}/>
+      <User render={(isLoggedIn) => isLoggedIn ? 'Mosharaf' : 'Guest'}/> */}
+
+      {/* React Context API  - avoid passing props in every level of the tree */}
+      {/* Context provides a way to pass data through the component tree without having to pass props down manually at every level.  */}
+      {/* Implements a user context which is enable a component at any level of the component tree to access the props   */}
+      
+      <UserProvider value='Mosharaf'>
+        <ComponentC/>
+      </UserProvider>
 
     </div>
   );
