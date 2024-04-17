@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// Error Boundary is a class component that implements either one or both of the lifecycle methods getDerivedStateFromError or componentDidCatch.
 class ErrorBoundaryComp extends Component {
     constructor(props) {
         super(props)
