@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 // Error Boundary is a class component that implements either one or both of the lifecycle methods getDerivedStateFromError or componentDidCatch.
+// didn,t hide crash on the development mode , only hide in the production mode
+
 class ErrorBoundaryComp extends Component {
     constructor(props) {
         super(props)
@@ -14,7 +16,9 @@ class ErrorBoundaryComp extends Component {
             hasError: true
         }
     }
-    componentDidCatch(error, info) { // used to log the error information
+    componentDidCatch(error, info) { 
+        // used to log the error information ,didn,t catch the error in the event handler but you should as usual try catch 
+
         console.log(error)
         console.log(info)
     }
