@@ -28,6 +28,8 @@ import React, { Component } from 'react'
     // Methods in error handling phase
     1. static getDerivedStateFromError(error) 
     2. componentDidCatch(error, info) -- used to log the error information 
+    A class component becomes an error boundary if it defines either (or both) of the lifecycle methods static getDerivedStateFromError() or componentDidCatch()
+    Entire application won't crash, only the component where the error occurs will crash
 */
 class LifeCyclehooksClassComp extends Component {
   render() {

@@ -27,6 +27,8 @@ import FragmentDemo from './components/FragmentDemo';
 import TopComp from './components/TopComp';
 import RefsDemo from './components/RefsDemo';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundaryComp from './components/ErrorBoundaryComp';
 
 function App() {
   return (
@@ -73,7 +75,13 @@ function App() {
 
       {/* <RefsDemo/> */}
 
-      <PortalDemo/>
+      {/* <PortalDemo/> */}
+      
+      <ErrorBoundaryComp>
+        <Hero heroName="Batman"/>
+        <Hero heroName="Superman"/>
+        <Hero heroName="Joker"/>
+      </ErrorBoundaryComp>
 
     </div>
   );
