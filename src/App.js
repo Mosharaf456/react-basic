@@ -29,6 +29,8 @@ import RefsDemo from './components/RefsDemo';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoundaryComp from './components/ErrorBoundaryComp';
+import ClickCounter from './components/ClickCounter';
+import HoverCountr from './components/HoverCountr';
 
 function App() {
   return (
@@ -83,9 +85,13 @@ function App() {
       <ErrorBoundaryComp>
         <Hero heroName="Superman"/>
       </ErrorBoundaryComp>
-      <ErrorBoundaryComp>
+
+      {/* <ErrorBoundaryComp>
         <Hero heroName="Joker"/>
-      </ErrorBoundaryComp>
+      </ErrorBoundaryComp> */}
+      
+      <ClickCounter/>
+      <HoverCountr/>
 
     </div>
   );
