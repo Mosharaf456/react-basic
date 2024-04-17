@@ -31,6 +31,10 @@ import Hero from './components/Hero';
 import ErrorBoundaryComp from './components/ErrorBoundaryComp';
 import ClickCounter from './components/ClickCounter';
 import HoverCountr from './components/HoverCountr';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCountr2 from './components/HoverCountr2';
+import User from './components/User';
+import CounterRender from './components/CounterRender';
 
 function App() {
   return (
@@ -79,19 +83,26 @@ function App() {
 
       {/* <PortalDemo/> */}
 
-      <ErrorBoundaryComp>
+      {/* <ErrorBoundaryComp>
         <Hero heroName="Batman"/>
       </ErrorBoundaryComp>
       <ErrorBoundaryComp>
         <Hero heroName="Superman"/>
-      </ErrorBoundaryComp>
-
+      </ErrorBoundaryComp> */}
       {/* <ErrorBoundaryComp>
         <Hero heroName="Joker"/>
       </ErrorBoundaryComp> */}
 
-      <ClickCounter name='Mosharaf'/>
-      <HoverCountr/>
+      {/* HOC to share common functinality */}
+      {/* <ClickCounter name='Mosharaf'/>
+        <HoverCountr/> */}
+
+      
+      {/* another approach render props pattern to reduce duplicate */}
+      <CounterRender render={(count, incrementCount) => <ClickCounter2 count={count} incrementCount={incrementCount}/>}/>
+      <CounterRender render={(count, incrementCount) => <HoverCountr2 count={count} incrementCount={incrementCount}/>}/>
+
+      <User render={(isLoggedIn) => isLoggedIn ? 'Mosharaf' : 'Guest'}/>
 
     </div>
   );
