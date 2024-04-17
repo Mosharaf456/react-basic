@@ -26,6 +26,7 @@ import FragmentDemo from './components/FragmentDemo';
 
 import TopComp from './components/TopComp';
 import RefsDemo from './components/RefsDemo';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
@@ -68,9 +69,11 @@ function App() {
 
       {/* <FragmentDemo/> */}
 
-      <TopComp/>
+      {/* <TopComp/> */}
 
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+
+      <PortalDemo/>
 
     </div>
   );

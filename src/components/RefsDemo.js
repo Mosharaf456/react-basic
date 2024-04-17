@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 
+/*
+****************refs************
+refs in react basically make it possible to access DOM node directly within react.
+Note: ref can,t be attach on the functional component.
+
+*/
+
 class RefsDemo extends Component {
     constructor(props) {
         super(props)
