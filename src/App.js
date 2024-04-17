@@ -124,8 +124,9 @@ function App() {
         <ComponentC/>
       </UserProvider> */}
 
+      {/* HTTP request */}
       <PostList/>
-      
+
     </div>
   );
 }
