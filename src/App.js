@@ -76,10 +76,14 @@ function App() {
       {/* <RefsDemo/> */}
 
       {/* <PortalDemo/> */}
-      
+
       <ErrorBoundaryComp>
         <Hero heroName="Batman"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
         <Hero heroName="Superman"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
         <Hero heroName="Joker"/>
       </ErrorBoundaryComp>
 
